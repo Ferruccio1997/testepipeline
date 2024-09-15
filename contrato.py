@@ -13,6 +13,18 @@ class ProdutoEnum(str, Enum):
 
 
 class Vendas(BaseModel):
+
+    """
+    Essa é a classe de vendas do meu banco de dados
+
+    Args:
+        email (EmailStr): email do comprador
+        data (datetime): data da compra
+        valor (PositiveFloat): valor da compra
+        produto (PositiveInt): nome do produto
+        quantidade ( PositiveInt): quantidade de produtos
+        produto (ProdutoEnum): categoria do produto
+    """
     email: EmailStr
     data: datetime
     valor: PositiveFloat
